@@ -34,7 +34,7 @@ except Exception as e:
 # -----------------------------
 # App title & description
 # -----------------------------
-st.title("Irrigation Water Quality Predictor")
+st.title("Irrigation Water Quality Predictor for Muravera Coastal Aquifer")
 st.write("Enter **EC**, **pH**, and **Temperature (T)** to predict **IWQI**, **SAR**, and **PS**.")
 st.info("Important: Enter EC in the SAME unit used for training (e.g., mS/cm).")
 
@@ -85,3 +85,4 @@ if st.button("Predict"):
     c3.metric("PS",   f"{pred_ps:.2f}")
 
     st.write("**IWQI Class:**", iwqi_class(pred_iwqi))
+
